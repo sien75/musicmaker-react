@@ -1,0 +1,28 @@
+{
+  "name": "musicmaker-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:esm": "node ./build/rm ./lib/esm; tsc --project ./build/tsconfig.esm.json",
+    "build:umd": "webpack --config ./build/webpack.umd.js",
+    "test": "webpack serve --config ./build/webpack.test.js",
+    "doc": "node ./build/makeDoc"
+  },
+  "repository": "git@github.com:sien75/musicmaker-react.git",
+  "author": "sien75 <smooooooe@hotmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/ramda": "^0.28.15",
+    "musicmaker": "^3.0.2",
+    "ramda": "^0.28.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "react-dom": "^18.2.0",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
